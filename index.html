@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script type="module" src="js/index.js"></script>
+</head>
+
+<body>
+    <img src="./img/Pokemon-logo-497D61B223-seeklogo.com.png" alt="" id="logo" style="margin: 0 auto;width: 30%;margin-left:30%;margin-right: 30%;"><br>
+    <label for="">Tipo 1</label>
+    <select class="tipos" id="tipo1"></select>
+    <label for="">Tipo 2</label>
+    <select class="tipos" id="tipo2"></select>
+    <input type="text" name="nombre" placeholder="Buscar" id="nombrePkm">
+    <button id="flecha">&darr;</button>
+    <select name="" id="ordenar">
+        <option value="" selected>Ordenar por...</option>
+        <option value="attack">Ataque</option>
+        <option value="defense">Defensa</option>
+        <option value="special-attack">Ataque Especial</option>
+        <option value="special-defense">Defensa Especial</option>
+        <option value="hp">Vida</option>
+        <option value="spedd">Velocidad</option>
+    </select>
+    <div>
+        <h3>Generación</h3>
+        <label for="">Primera</label>
+        <input type="checkbox" name="" class ="generacion" id="g1" checked>
+        &nbsp;&nbsp;
+        <label for="">Segunda</label>
+        <input type="checkbox" name="" value="151-251" class ="generacion" id="g2">
+        &nbsp;&nbsp;
+        <label for="">Tercera</label>
+        <input type="checkbox" name="" value="251-386" class ="generacion" id="g3">
+        &nbsp;&nbsp;
+        <label for="">Cuarta</label>
+        <input type="checkbox" name="" value="386-494" class ="generacion" id="g4">
+        &nbsp;&nbsp;
+        <label for="">Quinta</label>
+        <input type="checkbox" name="" value="494-649" class ="generacion" id="g5">
+        &nbsp;&nbsp;
+        <label for="">Sexta</label>
+        <input type="checkbox" name="" value="649-721" class ="generacion" id="g6">
+        &nbsp;&nbsp;
+        <label for="">Séptima</label>
+        <input type="checkbox" name="" value="721-802" class ="generacion" id="g7">
+        &nbsp;&nbsp;
+        <label for="">Octava</label>
+        <input type="checkbox" name="" value="802" class ="generacion" id="g8">
+
+    </div>
+
+    <hr>
+    <section id="contenido"></section>
+    <!-- modal -->
+    <div class="w3-container">
+        <h2>W3.CSS Modal</h2>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+      
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <div class="w3-container">
+              <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <p id="nombrePokemon"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+
+</html>
